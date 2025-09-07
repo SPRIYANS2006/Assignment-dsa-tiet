@@ -12,7 +12,8 @@ int main() {
     getline(cin, str);
 
     string result = "";
-    for (char ch : str) {
+    for (int i=0; i< str.length(); i++){
+        char ch = str[i];
         if (!isVowel(ch)) {
             result += ch;
         }

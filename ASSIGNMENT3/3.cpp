@@ -8,7 +8,8 @@ using namespace std;
 
 bool isBalanced(string str) {
     stack<char> s;
-    for (char c : str) {
+    for(int i=0 ;i< str.length(); i++){
+        char ch = str[i];
         if (c == '(' || c == '{' || c == '[')
             s.push(c);
         else if (c == ')' || c == '}' || c == ']') {
